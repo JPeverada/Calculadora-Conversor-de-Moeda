@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CALCULADORA 2000</h1>
+    <div class="container">
+        <h2>CALCULADORA</h2>
+        <input type="number" name="num1" id="num1" placeholder="Digite o primeiro número"><br>
+        <input type="number" name="num2" id="num2" placeholder="Digite o segundo número"><br>
+        <input checked="box1" type="radio" name="box1" id="box1"><b>Soma</b> <input type="radio" name="box2" id="box2"><b>Subtração</b><input type="radio" name="box3" id="box3"><b>Multiplicação</b> <input type="radio" name="box4" id="box4"><b>Divisão</b><br>
+        <button onclick="calc()" id="calc">CALCULAR</button>
+        <p id="resultado"></p>
+    </div>
+    <br>
+    <div class="container2">
+        <h2>Conversor de Moeda</h2>
+        <input type="number" name="num1" id="num1" placeholder="Valor a converter"> <button id="calc" onclick="converter()">CONVERTER</button><br>
+        De: <select name="moedaOrigem" id="moedaOrigem">
+            <option value="Origem" disabled selected>Selecione a Moeda</option>
+            <option value="BRL">Real</option>
+            <option value="USD">Dólar</option>
+            <option value="EUR">Euro</option>
+        </select>  Para: <select name="moedaDestino" id="moedaDestino">
+            <option value="Origem" disabled selected>Selecione a moeda</option>
+            <option value="BRL">Real</option>
+            <option value="USD">Dólar</option>
+            <option value="EUR">Euro</option>
+        </select> 
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
